@@ -4,90 +4,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maxim Weiss – Klempner</title>
   <style>
+    :root {
+      --primary: #003b5b;
+      --accent: #0088cc;
+      --light: #eaf6ff;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f8fc;
-      color: #111;
+      background: white;
+      color: var(--primary);
     }
-    header {
-      background: #005f99;
-      color: white;
+    .container {
+      max-width: 700px;
+      margin: auto;
       padding: 2rem 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    header {
+      border-bottom: 4px solid var(--accent);
+      padding-bottom: 1rem;
     }
-    header p {
-      margin: 0.5rem 0 0;
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+    .notice {
+      background: var(--light);
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+    .highlight {
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .info {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    .contact {
+      margin-top: 2rem;
       font-size: 1.2rem;
     }
-    .content {
-      padding: 2rem 1rem;
-      max-width: 600px;
-      margin: auto;
-    }
-    .contact-box {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    .contact-box h2 {
-      margin-top: 0;
-    }
-    .contact-box a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background: #0077cc;
-      color: white;
+    .contact a {
+      color: var(--primary);
       text-decoration: none;
-      border-radius: 8px;
+      display: block;
+      margin: 0.5rem 0;
       font-weight: bold;
     }
-    .map-link {
-      color: #0077cc;
-      text-decoration: underline;
+    .button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
     }
     footer {
       text-align: center;
-      padding: 1rem;
       font-size: 0.9rem;
-      color: #555;
+      margin-top: 4rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Maxim Weiss – Klempner</h1>
-    <p>✅ 24h Soforthilfe – Immer für Sie da!</p>
-  </header>  <div class="content">
-    <div class="contact-box">
-      <h2>📍 Adresse</h2>
-      <p>Kölner Str. 92<br>51379 Leverkusen</p>
-      <p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=K%C3%B6lner+Str.+92,+51379+Leverkusen" target="_blank">➡️ Auf Karte ansehen</a></p>
-    </div><div class="contact-box">
-  <h2>📞 Jetzt anrufen</h2>
-  <p>01525 9022094</p>
-  <a class="button" href="tel:015259022094">Anrufen</a>
+  <div class="container">
+    <header>
+      <h1>Maxim Weiss – Klempner</h1>
+      <div class="subhead">24h Notdienst in Leverkusen</div>
+    </header><div class="notice">
+  <div><strong>Achtung Baustelle</strong></div>
+  <div>"Wir überarbeiten unsere Webseite für Sie!"</div>
 </div>
 
-<div class="contact-box">
-  <h2>🛠️ Leistungen</h2>
-  <ul>
-    <li>Sanitär-Notdienst</li>
-    <li>Rohrreinigung</li>
-    <li>Wasserleitungen & Reparaturen</li>
-    <li>Dachrinnen & Klempnerarbeiten</li>
-  </ul>
+<div class="info">
+  Bald finden Sie hier alle Infos in neuem Glanz und besserem Design.<br>
+  Aber keine Sorge: Unser <span class="highlight">Service bleibt wie gewohnt top!</span>
 </div>
 
-  </div>  <footer>
-    &copy; 2025 Maxim Weiss – Klempner. Immer offen – 24h erreichbar.
-  </footer>
+<div class="contact">
+  <div class="highlight">Wir sind jederzeit erreichbar:</div>
+  <a href="tel:015259022094">📞 01525 9022094</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=K%C3%B6lner+Str.+92,+51379+Leverkusen" target="_blank">
+    📍 Kölner Str. 92, 51379 Leverkusen
+  </a>
+</div>
+
+<a class="button" href="tel:015259022094">Jetzt anrufen</a>
+
+<footer>
+  &copy; 2025 Maxim Weiss – Klempner | Immer offen – 24h erreichbar
+</footer>
+
+  </div>
 </body>
 </html>
