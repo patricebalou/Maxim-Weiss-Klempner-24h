@@ -3,79 +3,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maxim Weiss – Klempner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #003b5b;
-      --accent: #0088cc;
-      --light: #eaf6ff;
+      --primary: #002b45;
+      --accent: #00aaff;
+      --light: #f0f8ff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: white;
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
       color: var(--primary);
+      line-height: 1.6;
     }
     .container {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 3rem 1.5rem;
       text-align: center;
     }
     header {
-      border-bottom: 4px solid var(--accent);
       padding-bottom: 1rem;
     }
     h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 800;
     }
     .subhead {
       font-size: 1.2rem;
-      font-weight: 500;
       color: var(--accent);
       margin-top: 0.5rem;
     }
-    .notice {
+    .alert {
       background: var(--light);
-      padding: 1rem;
-      border-left: 4px solid var(--accent);
+      padding: 2rem 1rem;
       margin-top: 2rem;
-      font-size: 1.1rem;
+      border-left: 5px solid var(--accent);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-radius: 8px;
     }
-    .highlight {
-      font-weight: bold;
-      color: var(--accent);
+    .alert-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .notice-title {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
     .info {
       margin-top: 2rem;
       font-size: 1.1rem;
-      line-height: 1.5;
+    }
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
     }
     .contact {
-      margin-top: 2rem;
-      font-size: 1.2rem;
+      margin-top: 2.5rem;
+      font-size: 1.1rem;
     }
     .contact a {
       color: var(--primary);
       text-decoration: none;
+      font-weight: 600;
       display: block;
       margin: 0.5rem 0;
-      font-weight: bold;
     }
     .button {
       display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
       background: var(--accent);
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
+      font-weight: 600;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #008ecc;
     }
     footer {
-      text-align: center;
-      font-size: 0.9rem;
       margin-top: 4rem;
+      font-size: 0.9rem;
       color: #777;
     }
   </style>
@@ -85,28 +107,28 @@
     <header>
       <h1>Maxim Weiss – Klempner</h1>
       <div class="subhead">24h Notdienst in Leverkusen</div>
-    </header><div class="notice">
-  <div><strong>Achtung Baustelle</strong></div>
-  <div>"Wir überarbeiten unsere Webseite für Sie!"</div>
+    </header><div class="alert">
+  <div class="alert-icon">🚧</div>
+  <div class="notice-title">Achtung Baustelle</div>
+  <p>Wir überarbeiten unsere Webseite für Sie!</p>
 </div>
 
 <div class="info">
-  Bald finden Sie hier alle Infos in neuem Glanz und besserem Design.<br>
-  Aber keine Sorge: Unser <span class="highlight">Service bleibt wie gewohnt top!</span>
+  Bald finden Sie hier alle Infos in <span class="highlight">neuem Glanz</span> und besserem Design.<br>
+  Aber keine Sorge: Unser <span class="highlight">Service bleibt top!</span>
 </div>
 
 <div class="contact">
-  <div class="highlight">Wir sind jederzeit erreichbar:</div>
-  <a href="tel:015259022094">📞 01525 9022094</a>
+  <div class="highlight">📞 01525 9022094</div>
+  <a href="tel:015259022094">Jetzt direkt anrufen</a>
   <a href="https://www.google.com/maps/search/?api=1&query=K%C3%B6lner+Str.+92,+51379+Leverkusen" target="_blank">
-    📍 Kölner Str. 92, 51379 Leverkusen
-  </a>
+    📍 Kölner Str. 92, 51379 Leverkusen</a>
 </div>
 
-<a class="button" href="tel:015259022094">Jetzt anrufen</a>
+<a class="button" href="tel:015259022094">Sofortkontakt aufnehmen</a>
 
 <footer>
-  &copy; 2025 Maxim Weiss – Klempner | Immer offen – 24h erreichbar
+  &copy; 2025 Maxim Weiss – Klempner | Immer erreichbar – 24 Stunden täglich
 </footer>
 
   </div>
